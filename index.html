@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Création De Carte</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Carte d'électeur</div>
+            <ul class="links">
+                <li><a class="active" href="index.html">créer un compte</a></li>
+                <li><a href="carte.html">demande de carte</a></li>
+                <li><a href="suivi.html">suivi de demande</a></li>
+            </ul>
+        </div>
+        <div class="compte">
+            <h2>Créer Compte</h2>
+            <div class="content">
+                <form action="compte.php" method="post">
+                <input type="text" name="username" placeholder="votre username">
+                <input type="password" name="pwd" placeholder="votre mot de passe">
+                <input type="password" name="pwdc" placeholder="confirmer votre mot de passe">
+                <input type="submit" name="valider" value="valider">
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

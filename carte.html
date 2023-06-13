@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Création De Carte</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Carte d'électeur</div>
+            <ul class="links">
+                <li><a href="index.html">créer un compte</a></li>
+                <li><a class="active" href="carte.html">demande de carte</a></li>
+                <li><a href="suivi.html">suivi de demande</a></li>
+            </ul>
+        </div>
+        <div class="compte">
+            <h2>Damande de carte</h2>
+            <div class="content">
+                <form action="carte.php" method="post">
+                <input type="text" name="username" placeholder="votre username">
+                <input type="text" name="nom" placeholder="votre nom">
+                <input type="text" name="prenom" placeholder="votre prenom">
+                <input type="text" name="cin" placeholder="votre cin">
+                <input type="text" name="region" placeholder="votre région">
+                <input type="text" name="localite" placeholder="votre localité">
+                <input type="text" name="lieu_naiss" placeholder="lieu de naissance">
+                <div class="date">
+                    <p>date de naissance</p>
+                    <input type="date" name="date_naiss">
+                </div>
+                <input type="submit" name="envoyer" value="envoyer">
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

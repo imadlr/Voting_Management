@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+*:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+/* start container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/* end container */
+/* start header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 60px;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+}
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header .links li {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .header .title {
+        margin-top: 10px;
+    }
+}
+.header .title {
+    font-size: 25px;
+    color: #1787e0;
+    font-weight: bold;
+}
+.header .links {
+    display: flex;
+}
+.header .links li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.header .links li a:hover,
+.header .links li a.active {
+    color: #1787e0;
+}
+/* end header */
+/* start créer compte */
+.compte {
+    background-color: #1787e0;
+    width: 70%;
+    margin: auto;
+    border-radius: 6px;
+}
+@media (max-width: 991px) {
+    .compte {
+        width: 100%;
+    }
+}
+.compte h2 {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.compte form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px 0 0;
+    padding: 0 80px 15px;
+}
+.compte form input {
+    width: 100%;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.compte form input[type="submit"] {
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+.compte form input::placeholder {
+    transition: 0.5s;
+}
+.compte form input:focus::placeholder {
+    opacity: 0;
+}
+.compte form input[type="submit"]:hover {
+    background-color: #1787e0;
+    color: white;
+}
+.compte form .date {
+    position: relative;
+    height: 36px;
+}
+.compte form .date p {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #b8b2b2;
+}
+/* end créer compte */
